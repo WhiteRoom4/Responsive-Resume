@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+  viewport可以把螢幕寬度都轉成裝置的寬度，就不會有內容不同步的問題
+  瀏覽器顯示寬度=裝置寬度　width=device-width
+  縮放比例為1　initial-scale=1
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>響應式履歷</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <!--左邊圖片-->
+      <div class="photo">
+        <img src="images/headshot.jpg" alt="" width="150px">
+      </div>
+      <!--右邊文字-->
+      <div class="introduction">
+        <h1>洪君緯</h1>
+        <p>靜宜大學財務與計算數學系碩士。曾任大專院校專任助理、傳產儲備幹部。目前全職學習 Web 技術。</p>
+        <p>期望職務：初階網頁工程師</p>
+        <p>Email : s1000557@gmail.com  </p>
+        <p>Changhua, Taiwan </p>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+
+    <div class="content">
+      <!--技能,用選單呈現-->
+      <div class="skills-list">
+        <h2>技能</h2>
+        <div class="skills">
+          <h3>前端</h3>
+          <p>
+            HTML / CSS <br>
+            JavaScript ( ES6 / AJAX / API )<br>
+          </p>
+        </div>
+        <div class="skills">
+          <h3>後端</h3>
+          <p>
+            暫無
+          </p>
+        </div>
+        <div class="skills">
+          <h3>工具</h3>
+          <p>GitHub</p>
+        </div>
+        <div class="skills">
+          <h3>其他</h3>
+          <p>R( Machine Learning )</p>
+        </div>
+      </div>
+      <!--認證,用輪播呈現-->
+      <div class="certification">
+        <h2>認證</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- 輪播項目 -->
+            <div class="swiper-slide">
+              <img src="images/rhce.jpg" alt="" width="100%">
+              <!-- width="100%"，會自動去抓父層容器的尺寸-->
+            </div>
+            <div class="swiper-slide">
+              <img src="images/ocpjp.jpg" alt="" width="100%">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/oralce-oca.jpg" alt="" width="100%">
+            </div>
+          </div>
+          <!-- 分頁設置 -->
+          <div class="swiper-pagination"></div>
+          <!-- 上一個/下一個 按鈕 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <!--工作經歷-->
+      <div class="experience">
+        <h2>經歷</h2>
+        <h3>雅客計程車客運/儲備幹部(2019/05～2020/02)</h3>
+        <p>
+        電話客服派車及客訴處理<br>
+        相關行政作業<br>
+        主管臨時交辦事項<br>
+        </p>
+        <h3>中興大學校務發展中心/專任助理(2018/06～2019/04)</h3>
+        <p>
+        管理SQL Server、Qlik Sense Enterprise<br>
+        資料蒐集及前處理<br>
+        統計分析(網路聲量、畢業生流向及薪資分布)<br>
+        相關業務規劃與執行<br>
+        </p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="work">
+        <h2>作品集</h2>
+        <p>近期更新</p>
+      </div>
+      <div class="autobiography">
+        <h2>自傳</h2>
+        <p>第一份工作是在中興大學校務發展中心擔任專任助理，負責校務研究業務。除基本的行政作業外，還有研究議題的擬定及可行性分析、校務資料的蒐集彙整及清理、管理SQL Server和Qlik Sense Enterprise，也曾做過網路聲量及畢業生流向分析，有獨立作業和跨單位協作的經驗。第二份工作是在雅客計程車客運擔任儲備幹部，負責電話客服及行政業務。後由於個人進修規劃，離開了儲備幹部一職開始全職學習 Web 技術，期冀能在精實自己的實力後，順利轉換跑道成為網頁工程師。</p>
+      </div>
+    </div>
+
+
+    <!--footer當作page top-->
+    <div class="footer">
+      <a href="#">Page Top</a>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/all.js"></script>
+</body>
+</html>
