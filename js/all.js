@@ -3,13 +3,14 @@ $(document).ready(function() {
   $('.skills h3').click(function(event) {
     
     //技能skills,用選單呈現
+    //會自動加上 active 這個 class，如果原先就有 active 這個 class 存在，就會變成把 active 移除掉
     $(this).toggleClass('active');
-    // 讓點擊到的 h2找到父元素 .question ，再找裡面的 P 判斷收闔
+    // 讓點擊到的 h3找到父元素 .skills ，再找裡面的 P 判斷收闔
     $(this).parent().find('p').slideToggle();
 
     // 自己以外的 p 隱藏起來
     $(this).parent().siblings().find('p').slideUp();
-    // 自己以外的 h2 移除樣式
+    // 自己以外的 h3 移除樣式
     $(this).parent().siblings().find('h3').removeClass('active');
 
   });
