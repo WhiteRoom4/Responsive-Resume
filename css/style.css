@@ -182,6 +182,10 @@ table {
   clear: both;
 }
 
+.work a{
+  line-height: 1.5;
+}
+
 .autobiography{
   margin-top: 30px;
 }
